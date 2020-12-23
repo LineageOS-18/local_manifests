@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="custom" fetch="https://github.com/LineageOS-18/" />
+    
+    # HALS
+    <remove-project name="LineageOS/android_hardware_qcom_audio" />
+    <remove-project name="LineageOS/android_hardware_qcom_display" />
+    <remove-project name="LineageOS/android_hardware_qcom_media" />
+    <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="custom" revision="caf-msm8996-r" />
+    <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="custom" revision="caf-msm8996-r" />
+    <project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom_media" groups="qcom,pdk-qcom" remote="custom" revision="caf-msm8996-r" />
+    
+<!--
+    # Apps
+    <remove-project name="LineageOS/android_packages_apps_Updater" />
+    <remove-project name="LineageOS/android_packages_apps_Settings" />
+    <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="custom" revision="los18" />
+    <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="custom" revision="los18" />
+    
+    #Frameworks
+    <remove-project name="LineageOS/android_frameworks_base" />
+    <project path="frameworks/base" name="android_frameworks_base" remote="custom" revision="los18" />
+-->
+</manifest>
