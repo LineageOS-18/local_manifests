@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote name="custom" fetch="https://github.com/LineageOS-18/" />
+    
     # HALS
-    <remove-project name="android_hardware_qcom_audio" />
-    <remove-project name="android_hardware_qcom_display" />
-    <remove-project name="android_hardware_qcom_media" />
-    <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="mido" revision="caf-msm8996-r" />
-    <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="mido" revision="caf-msm8996-r" />
-    <project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom_media" groups="pdk,qcom,qcom_media" remote="mido" revision="caf-msm8996-r" />
+    <remove-project name="LineageOS/android_hardware_qcom_audio" />
+    <remove-project name="LineageOS/android_hardware_qcom_display" />
+    <remove-project name="LineageOS/android_hardware_qcom_media" />
+    <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="custom" revision="caf-msm8996-r" />
+    <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="custom" revision="caf-msm8996-r" />
+    <project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom_media" groups="pdk,qcom,qcom_media" remote="custom" revision="caf-msm8996-r" />
+    
     # Apps
-    <remove-project name="platform_packages_apps_Updater" />
-    <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="mido" revision="los18" />
+    <remove-project name="LineageOS/android_packages_apps_Updater" />
+    <remove-project name="LineageOS/android_packages_apps_Settings" />
+    <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="custom" revision="los18" />
+    <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="custom" revision="los18" />
+    
+    #Frameworks
+    <remove-project name="LineageOS/android_frameworks_base" />
+    <project path="frameworks/base" name="android_frameworks_base" remote="custom" revision="los18" />
 </manifest>
