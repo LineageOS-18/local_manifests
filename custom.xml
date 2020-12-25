@@ -22,4 +22,6 @@
     <remove-project name="LineageOS/android_frameworks_base" />
     <project path="frameworks/base" name="android_frameworks_base" remote="custom" revision="los18" />
 -->
+    # Vendor
+    <project path="vendor/support" name="lineage_vendor_support" remote="custom" revision="los18" />
 </manifest>
