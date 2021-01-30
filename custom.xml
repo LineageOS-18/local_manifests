@@ -12,6 +12,7 @@
     
     # Apps
     <remove-project name="LineageOS/android_packages_apps_AudioFX" />
+    <project path="packages/apps/Changelog" name="android_packages_apps_Changelog" remote="custom" revision="los18" />
 <!--
     <remove-project name="LineageOS/android_packages_apps_Updater" />
     <remove-project name="LineageOS/android_packages_apps_Settings" />
